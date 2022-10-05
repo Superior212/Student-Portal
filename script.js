@@ -1,8 +1,10 @@
 let allStudent=[];
 function addStudent () {
+    if (firstName.value =="" || lastName.value =="" || userEmail.value =="" || userPassword.value =="") {
+        alert("Kindly fill all fileds")
+        // disp.innerHTML+= "Kindly fill all fileds"
+    }else{
     var mydate = new Date() 
-    // mydate.splice(mydate, 3);D
-    // console.log(mydate);
     var Student ={
     firstname : firstName.value,
     lastname :lastName.value,
@@ -10,6 +12,7 @@ function addStudent () {
     password1:userPassword.value,
     matricNo : `SQI${Math.round(Math.random()*1000000)}`,
     time : mydate 
+}
 }
     allStudent.push(Student);
     console.log(allStudent);
