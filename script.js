@@ -2,7 +2,6 @@ let allStudent=[];
 function addStudent () {
     if (firstName.value =="" || lastName.value =="" || userEmail.value =="" || userPassword.value =="") {
         alert("Kindly fill all fileds")
-        // disp.innerHTML+= "Kindly fill all fileds"
     }else{
     var mydate = new Date() 
     var Student ={
