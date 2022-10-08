@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700" onload=" getDetails()">
+    <h1 class="flex justify-center items-center text-2xl font-bold py-8 text-white">
+        ALL STUDENT
+    </h1>        
+<div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400" id="disp">
+       
+        </table>
+        </div>
+        <div class="py-12 bg-gray-700 dark:bg-gray-900 z-10 absolute top-0 right-0 bottom-0 left-0 hidden" id="modal">
+            <div role="alert" class="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+                <div class="relative py-8 px-5 md:px-10 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-md rounded border border-gray-400">
+                   
+                    <label for="firstName" class="text-white  text-sm font-bold">First Name</label>
+                    <input id="firstName" class="mb-5 mt-2 bg-gray-900 text-white placeholder-gray-200 border-gray-700 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Firstname">
+                    <label for="lastName" class="text-white  text-sm font-bold">Last Name</label>
+                    <input id="lastName" class="mb-5 mt-2 bg-gray-900 text-white placeholder-gray-200 border-gray-700 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Lastname">
+                    <label for="Email" class="text-white  text-sm font-bold">Email</label>
+                    <input id="userEmail" class="mb-5 mt-2 bg-gray-900 text-white placeholder-gray-200 border-gray-700 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Email">               
+                    <label for="password" class="text-white  text-sm font-bold">Password</label>
+                    <input id="userPassword" class="mb-5 mt-2 bg-gray-900 text-white placeholder-gray-200 border-gray-700 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="Password">
+                    <div class="flex items-center justify-center w-full">
+                        <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm" onclick="saveChanges()">Save changes</button>
+                        <button class="focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-400 ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 border rounded px-8 py-2 text-sm" onclick="close1()">Cancel</button>
+                    </div>
+                    </div>
+                    <button class="cursor-pointer absolute top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 transition duration-150 ease-in-out rounded focus:ring-2 focus:outline-none focus:ring-gray-600" onclick="close1()" aria-label="close modal" role="button">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+        </div>
+        </div>
+<script src="dashboard.js"></script>
+</body>
+</html>
